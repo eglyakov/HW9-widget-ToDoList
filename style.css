@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-bottom: 50px;
+    font-size: 18px;
+}
+
+.widget {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 50px auto 0;
+    width: 300px;
+    height: 400px;
+    border: 2px solid #fed136;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #202040;
+    overflow: auto;
+}
+
+.header {
+    padding: 10px 0;
+    font-size: 27px;
+    color: #fed136;
+    background-color: #222222;
+    text-align: center;
+    box-shadow: 0 0 8px #222222;
+}
+
+.add_task {
+    margin: 10px;
+    padding: 7px;
+    width: calc(100% - 34px - 4px);
+    font-size: 18px;
+}
+
+.add_task::placeholder {
+    font-size: 16px;
+}
+
+.tesks {
+    /* overflow: auto; */
+}
+
+.task_item {
+    padding: 10px;
+    display: flex; 
+}
+
+.task_item:not(:last-child) {
+    border-bottom: 1px solid #777777;
+} 
+
+.check {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    background-color: #7777773d;
+}
+
+.text {
+    margin-left: 10px;
+    width: calc(100% - 32px);
+}
+
+.check_on {
+    background-color: #fed136;
+}
+
+.check_on::after {
+    content: "\2713";
+    font-size: 18px;
+    margin-left: 4px;
+    color: #222222;
+}
+
+.text_on {
+    color: #222222a8;
+    text-decoration: line-through solid red;
+}
